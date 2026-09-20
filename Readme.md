@@ -1,1 +1,94 @@
-# TP1DPBO2526C2
+# TP1DPBO_Bioskop
+
+Program manajemen data Bioskop berbasis konsep **Object-Oriented Programming (OOP)** yang diimplementasikan dalam **4 bahasa pemrograman**: **C++**, **Java**, **Python**, dan **PHP**.
+
+## Janji
+
+Saya, mahasiswa yang mengerjakan TP1 Desain Pemrograman Berorientasi Objek, berjanji dengan sungguh-sungguh bahwa:
+
+- Saya mengerjakan tugas ini dengan jujur, sebaik-baiknya, dan sesuai kemampuan saya sendiri.
+- Saya tidak melakukan kecurangan dalam bentuk apa pun.
+- Saya tidak menyalin kode milik orang lain secara utuh tanpa menyebutkan sumbernya.
+- Jika melanggar janji ini, saya siap menerima sanksi sesuai ketentuan yang berlaku.
+
+## Desain dan Flow Kode
+
+### Class `Film`
+
+Satu class yang digunakan (relevan dengan tema Bioskop) dengan **5 atribut**:
+
+| Atribut  | Tipe    | Keterangan                    |
+| -------- | ------- | ----------------------------- |
+| `id`     | int     | Identitas unik film           |
+| `judul`  | string  | Judul film                    |
+| `genre`  | string  | Genre film (Action, Drama, dll) |
+| `durasi` | int     | Durasi film dalam menit       |
+| `gambar` | string  | Path file gambar lokal (bukan URL) |
+
+Class `Film` dibuat di 4 bahasa:
+- `CPP/Film.h`
+- `Java/Film.java`
+- `PHP/Film.php`
+- `Python/film.py`
+
+Objek `Film` disimpan dalam kumpulan list/array yang dikelola oleh program utama:
+- `CPP/main.cpp` (`vector<Film>`)
+- `Java/Main.java` (`ArrayList<Film>`)
+- `Python/main.py` (list Python)
+- `PHP/index.php` (`$_SESSION['film']`)
+
+### Fitur
+
+1. **Tambah Data** — membuat objek `Film` baru lalu memasukkannya ke list.
+2. **Tampilkan Data** — menampilkan semua objek `Film`.
+3. **Cari Data** — mencari objek berdasarkan `id`.
+4. **Update Data** — mengubah isi objek berdasarkan `id`.
+5. **Hapus Data** — menghapus objek berdasarkan `id`.
+6. **Keluar** — mengakhiri program (versi CLI).
+
+### Flow Kode (CLI: C++, Java, Python)
+
+```
+Tampilkan menu (1 Tambah, 2 Tampil, 3 Cari, 4 Update, 5 Hapus, 6 Keluar)
+        |
+        v
+Baca pilihan user
+        |
+        +--> 1: input id, judul, genre, durasi, gambar -> tambah objek Film ke list
+        +--> 2: loop semua Film di list -> cetak atributnya
+        +--> 3: input id -> loop, jika id cocok cetak Film-nya (minimal judul)
+        +--> 4: input id -> loop, jika cocok ubah atribut lalu set ke objek
+        +--> 5: input id -> loop, jika cocok hapus elemen dari list
+        +--> 6: keluar dari perulangan
+        +--> lain: tampilkan "Pilihan tidak valid"
+```
+
+### Flow Kode (Web: PHP)
+
+```
+index.php
+  |- require Film.php (definisi class Film)
+  |- session_start() -> $_SESSION['film'] berisi array/list objek Film
+  |- Proses aksi dari form (POST): tambah / update / hapus / cari
+  |- HtmlForm (input: id, judul, genre, durasi, gambar)
+  |- Tabel daftar film dengan tombol Update & Hapus per baris
+  |- Form pencarian berdasarkan id
+```
+
+Penyimpanan data **tanpa database**, memakai `$_SESSION`.
+
+## Dokumentasi
+
+Screenshot program berjalan / output untuk masing-masing bahasa:
+
+### C++
+![Output C++](Dokumentasi/CPP/ss%20cpp.png)
+
+### Java
+![Output Java](Dokumentasi/Java/ss%20java.png)
+
+### Python
+![Output Python](Dokumentasi/Python/ss%20python.png)
+
+### PHP
+![Output PHP](Dokumentasi/PHP/ss%20php.png)
