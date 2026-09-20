@@ -1,22 +1,15 @@
-# TP1DPBO Bioskop
+-Janji
 
-Program sederhana untuk mengelola data sebuah Bioskop menggunakan konsep
-Object-Oriented Programming (OOP). Dibuat dalam 4 bahasa pemrograman:
-**Java, PHP, Python, dan C++**.
+Saya Refan Maher Aysel dengan NIM 2509129 mengerjakan TP1 dalam
+mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak
+melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
-## Janji
+-Desain dan Flow Kode
 
-Saya, mahasiswa yang mengerjakan tugas ini, berjanji tidak melakukan
-kecurangan, tidak menyalin kode milik orang lain secara utuh, dan
-mengerjakan tugas ini dengan jujur serta sebaik-baiknya sesuai dengan
-ketentuan yang berlaku.
-
-## Desain dan Flow Kode
-
-### Class `Film`
+Class `Film`
 
 Satu class yang digunakan (relevan dengan tema Bioskop), memiliki minimal
-**5 atribut**:
+5 atribut:
 
 | Atribut | Tipe | Keterangan |
 |---------|------|------------|
@@ -31,7 +24,7 @@ Class `Film` dibuat di 4 bahasa (file `Film.java`, `Film.php`,
 (list/array) yang dikelola oleh program utama (`Main.java`,
 `index.php`, `main.py`, `main.cpp`).
 
-### Fitur
+Fitur
 
 1. **Tambah Data** — membuat objek `Film` baru lalu memasukkannya ke list.
 2. **Tampilkan Data** — menampilkan semua objek `Film`.
@@ -40,9 +33,8 @@ Class `Film` dibuat di 4 bahasa (file `Film.java`, `Film.php`,
 5. **Hapus Data** — menghapus objek berdasarkan `id`.
 6. **Keluar** — mengakhiri program (versi CLI).
 
-### Flow Kode (CLI: C++, Java, Python)
+-Flow Kode (CLI: C++, Java, Python)
 
-```
 Tampilkan menu (1 Tambah, 2 Tampil, 3 Cari, 4 Update, 5 Hapus, 6 Keluar)
         |
         v
@@ -55,11 +47,9 @@ Baca pilihan user
         +--> 5: input id -> loop, jika cocok hapus elemen dari list
         +--> 6: keluar dari perulangan
         +--> lain: tampilkan "Pilihan tidak valid"
-```
 
-### Flow Kode (Web: PHP)
+-Flow Kode (Web: PHP)
 
-```
 index.php
   |- require Film.php (definisi class Film)
   |- session_start() -> $_SESSION['film'] berisi array/list objek Film
@@ -67,62 +57,10 @@ index.php
   |- HtmlForm (input: id, judul, genre, durasi, gambar)
   |- Tabel daftar film dengan tombol Update & Hapus per baris
   |- Form pencarian berdasarkan id
-```
+
 
 Penyimpanan data **tanpa database**, memakai `$_SESSION`.
 
-## Struktur Folder
+-Dokumentasi Program Berjalan
 
-```
-TP1DPBO_Bioskop/
-├── CPP/                 Kode program C++
-│   ├── Film.h
-│   └── main.cpp
-├── Java/                Kode program Java
-│   ├── Film.java
-│   └── Main.java
-├── PHP/                 Kode program PHP (web)
-│   ├── Film.php
-│   └── index.php
-├── Python/              Kode program Python
-│   ├── film.py
-│   └── main.py
-├── Dokumentasi/         Screenshot/output program
-└── Readme.md
-```
-
-## Cara Menjalankan
-
-### C++ (folder `CPP`)
-```
-g++ main.cpp -o main
-./main
-```
-
-### Java (folder `Java`)
-```
-javac Main.java Film.java
-java Main
-```
-
-### Python (folder `Python`)
-```
-python main.py
-```
-
-### PHP (folder `PHP`)
-```
-php -S localhost:8000
-```
-lalu buka `http://localhost:8000` di browser.
-
-## Dokumentasi Program Berjalan
-
-Hasil output setiap bahasa ada di folder `Dokumentasi`:
-
-- `Dokumentasi/CPP/output_cpp.txt` — screenshot/output C++
-- `Dokumentasi/Java/output_java.txt` — screenshot/output Java
-- `Dokumentasi/Python/output_python.txt` — screenshot/output Python
-- `Dokumentasi/PHP/CATATAN.md` — cara menjalankan & panduan screenshot PHP
-
-(Screenshot asli bisa ditambahkan ke folder masing-masing.)
+Di folder Dokumentasi
