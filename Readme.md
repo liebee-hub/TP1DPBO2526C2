@@ -1,19 +1,12 @@
-# TP1DPBO_Bioskop
+-Janji
 
-Program manajemen data Bioskop berbasis konsep **Object-Oriented Programming (OOP)** yang diimplementasikan dalam **4 bahasa pemrograman**: **C++**, **Java**, **Python**, dan **PHP**.
+Saya Refan Maher Aysel dengan NIM 2509129 mengerjakan TP1 dalam
+mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak
+melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
-## Janji
+-Desain dan Flow Kode
 
-Saya, mahasiswa yang mengerjakan TP1 Desain Pemrograman Berorientasi Objek, berjanji dengan sungguh-sungguh bahwa:
-
-- Saya mengerjakan tugas ini dengan jujur, sebaik-baiknya, dan sesuai kemampuan saya sendiri.
-- Saya tidak melakukan kecurangan dalam bentuk apa pun.
-- Saya tidak menyalin kode milik orang lain secara utuh tanpa menyebutkan sumbernya.
-- Jika melanggar janji ini, saya siap menerima sanksi sesuai ketentuan yang berlaku.
-
-## Desain dan Flow Kode
-
-### Class `Film`
+Class `Film`
 
 Satu class yang digunakan (relevan dengan tema Bioskop) dengan **5 atribut**:
 
@@ -37,7 +30,7 @@ Objek `Film` disimpan dalam kumpulan list/array yang dikelola oleh program utama
 - `Python/main.py` (list Python)
 - `PHP/index.php` (`$_SESSION['film']`)
 
-### Fitur
+Fitur
 
 1. **Tambah Data** — membuat objek `Film` baru lalu memasukkannya ke list.
 2. **Tampilkan Data** — menampilkan semua objek `Film`.
@@ -46,7 +39,7 @@ Objek `Film` disimpan dalam kumpulan list/array yang dikelola oleh program utama
 5. **Hapus Data** — menghapus objek berdasarkan `id`.
 6. **Keluar** — mengakhiri program (versi CLI).
 
-### Flow Kode (CLI: C++, Java, Python)
+-Flow Kode (CLI: C++, Java, Python)
 
 ```
 Tampilkan menu (1 Tambah, 2 Tampil, 3 Cari, 4 Update, 5 Hapus, 6 Keluar)
@@ -63,7 +56,7 @@ Baca pilihan user
         +--> lain: tampilkan "Pilihan tidak valid"
 ```
 
-### Flow Kode (Web: PHP)
+-Flow Kode (Web: PHP)
 
 ```
 index.php
@@ -77,18 +70,6 @@ index.php
 
 Penyimpanan data **tanpa database**, memakai `$_SESSION`.
 
-## Dokumentasi
+-Dokumentasi
 
-Screenshot program berjalan / output untuk masing-masing bahasa:
-
-### C++
-![Output C++](Dokumentasi/CPP/ss%20cpp.png)
-
-### Java
-![Output Java](Dokumentasi/Java/ss%20java.png)
-
-### Python
-![Output Python](Dokumentasi/Python/ss%20python.png)
-
-### PHP
-![Output PHP](Dokumentasi/PHP/ss%20php.png)
+Di folder Dokumentasi
